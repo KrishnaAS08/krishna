@@ -1,0 +1,9 @@
+memory: 1GB
+instances: 1
+applications:
+- name: customer-service
+  path:  target\CustomerService-0.0.1-SNAPSHOT.jar
+  routes:
+    - route: customer-service-krishna.cfapps.io
+  services:
+  - customerservice-db
